@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    long long result = 1;  
+
+    cout << "Enter a positive number: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; i++) 
+    {   
+       result *= i;   // result = result * i
+    }
+
+    cout << "The result is: " << result << endl;
+
+    return 0;
+}
