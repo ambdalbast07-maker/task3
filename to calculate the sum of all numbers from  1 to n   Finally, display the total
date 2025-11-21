@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    int sum = 0; // نبدأ المجموع بصفر
+
+    cout << "Enter a positive number: ";
+    cin >> n;
+
+    // نجمع الأرقام من 1 لحد n
+    for (int i = 1; i <= n; i++) {
+        sum += i;  // sum = sum + i
+    }
+
+    cout << "The total sum is: " << sum << endl;
+
+    return 0;
+}
