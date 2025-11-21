@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+ {
+    int number;
+    int evenSum = 0;
+
+    cout << "Enter numbers (enter 0 to stop): " << endl;
+
+    while (true)
+    {
+        cin >> number;
+       if (number == 0)
+       {
+            break; 
+        }
+
+        if (number % 2 == 0)
+       {
+            evenSum += number; 
+        }
+    }
+    cout << "The sum of all even numbers entered is: " << evenSum << endl;
+
+    return 0;
+}
