@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int temp;
+    int highest = -1;   // start with a very small value
+
+    while (true) {
+        cout << "Enter temperature: ";
+        cin >> temp;
+
+        // check if temperature is OUTSIDE the allowed range
+        if (temp < 0 || temp > 100) {
+            break;  // stop the loop
+        }
+
+        // update highest temperature
+        if (temp > highest) {
+            highest = temp;
+        }
+    }
+
+    cout << "Highest temperature entered: " << highest << endl;
+
+    return 0;
+}
